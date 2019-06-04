@@ -11,8 +11,49 @@ var wins = 0;
 
 //when page is opened or refreshed
 window.onload = function () {
+   
+   
     // random word is choosen from array of sweets
     var sweets = gameWord [Math.floor(Math.random() * gameWord.length)];
+    sweets = sweets.toLowerCase();
     var sweetsLetters = sweets.split("");
+   
     console.log(sweetsLetters);
+    
+    // creating "string" out of the random word chosen
+    function randomSweet() {
+        sweets = gameWord [Math.floor(Math.random() * gameWord.length)];
+        sweets = sweets.toLowerCase();
+        sweetsLetters = sweets.split("");
+       
+
+    // puts the letters from random word in the div created for it
+    randomWord.textContent = sweetsLetters.join("");
+    console.log(sweetsLetters);
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+    // when a key is pressed
+document.onkeyup = function (event) {
+
+    var letterGuess = event.key.toLowerCase();
+
+
+
+
+
+
+
+
 }
