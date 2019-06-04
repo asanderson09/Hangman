@@ -31,7 +31,7 @@ window.onload = function () {
     randomWord.textContent = sweetsLetters.join("");
     console.log(sweetsLetters);
 
-
+    // displays the number of letters in the random
 
     };
 }
@@ -42,6 +42,10 @@ window.onload = function () {
         randomWord.textContent = dashes;
         return dashes.split("")
     };
+
+    // sets the function for wordUnderScore equal to the dashes variable
+    wordUnderScore() = dashes;
+
 
 
 
