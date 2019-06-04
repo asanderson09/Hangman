@@ -33,9 +33,15 @@ window.onload = function () {
 
 
 
-    }
+    };
 }
-
+    // replaces & displays the correct amount of underscores for letters in sweets 
+    function wordUnderScore () {
+        var dash = "_";
+        var dashes = dash.repeat(sweetsLetters.length); 
+        randomWord.textContent = dashes;
+        return dashes.split("")
+    };
 
 
 
